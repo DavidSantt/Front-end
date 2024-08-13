@@ -1,0 +1,10 @@
+#p {
+    margin: 15px 30px 8px 5px;
+    padding: 16px;
+    background-color: blue;
+    border: Solid;
+    border-width: 10px;
+    border-color: brown blue chartreuse coral;
+    border-radius: 20px;
+
+}

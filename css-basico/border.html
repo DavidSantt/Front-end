@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing & Border Box</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: 10px solid green;
+        }
+        .cborder {
+            background-color: brown;
+            box-sizing: border-box;
+        }
+        .sborder {
+            background-color: rgb(116, 119, 116);
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-sizing & Border Box</h1>
+    <div class="cborder">Com Border Box</div>
+    <div class="sborder">Sem Border Box</div>
+
+</body>
+</html>
