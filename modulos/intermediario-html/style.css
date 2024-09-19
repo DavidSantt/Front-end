@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 60vw;
+    height: 440px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.134);
+    padding: 20px;
+}
+
+.fora {
+    font-size: .7em;
+}
+
+p {
+    margin-top: 5px;
+}
+
+legend, h1 {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#botao {
+    background-color: green;
+    color: white;
+    margin-left: 40%;
+    margin-top: 30px;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+}

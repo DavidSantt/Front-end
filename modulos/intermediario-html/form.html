@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form method="get" autocomplete="on">
+        <h1>Cadastre-se</h1>
+        <legend>É Rapido e Facil</legend>
+        <hr>
+        <p>
+            <label for="inome"></label>
+            <input type="text" name="nome" id="inome" placeholder="Nome" autocomplete="name" required>
+
+            <label for="isobrenome"></label>
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="icadastro"></label>
+            <input type="email" name="cadastro" id="icadastro" placeholder="Celular ou Email" autocomplete="email"
+                minlength="10" size="49" required>
+        </p>
+
+        <p>
+            <label for="isenha"></label>
+            <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="Nova Senha"
+                min="8" size="49" required>
+        </p>
+
+        <p>
+            <label class="fora">Data de Nascimento</label> <br>
+            <input type="date" name="data" id="idata" required>
+        </p>
+
+        <p>
+            <label class="fora">Gênero</label> <br>
+
+            <label for="imas">Masculino</label>
+            <input type="radio" name="mas" id="imas" value="Masculino">
+
+            <label for="ifem">Feminino</label>
+            <input type="radio" name="fem" id="ifem" value="Feminino">
+
+            <label for="ioutro">Outro</label>
+            <input type="radio" name="outro" id="ioutro" value="Outro">
+        </p>
+
+        <p>
+            <input type="submit" id="botao" value="Enviar">
+        </p>
+    </form>
+</body>
+
+</html>
