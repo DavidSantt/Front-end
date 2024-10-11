@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: opx;
+            box-sizing: border-box;
+        }
+    
+        input {
+            padding: 5px;
+            margin-bottom: 7px;
+        }
+
+        hr {
+            margin-bottom: 10px;
+        }
+
+        div h1 {
+            margin-bottom: 5px;
+
+            font-size: 2.5em;
+        }
+
+        p {
+            margin-bottom: 3px;
+        }
+
+        p > small {
+            font-size: 10px;
+        }
+
+        input#en {
+            margin: auto;
+            display: block;
+        }
+
+        div {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 10%;
+            padding: 20px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.093);
+        }
+
+        input#en {
+            background-color: rgb(0, 154, 0);
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <h1><strong>Cadastre-se</strong></h1>
+        <p>É rapido e facil</p>
+        <hr>
+        <form action="" method="post" autocomplete="on"></form>
+
+        <label for="iname"></label>
+        <input type="text" name="name" id="iname" required placeholder="Nome" autocomplete="name">
+
+        <label for="isobren"></label>
+        <input type="text" name="sobren" id="isobren" required placeholder="Sobrenome" autocomplete="name"> <br>
+
+        <label for="iemail"></label>
+        <input type="text" name="email" id="iemail" required placeholder="Email" autocomplete="email" size="47"> <br>
+
+        <label for="isenha"></label>
+        <input type="password" name="senha" id="isenha" required placeholder="Senha" autocomplete="current-password" size="47"> <br>
+
+        <p>
+            <small>Data de Nascimento</small>
+        </p>
+
+        <label for="idata"></label>
+        <input type="date" name="data" id="idata" required size="47"> <br>
+
+        <p>
+            <small>Gênero</small>
+        </p>
+
+        <label for="imas">Masculino</label>
+        <input type="radio" name="mas" id="imas">
+
+        <label for="ifem">Masculino</label>
+        <input type="radio" name="fem" id="ifem">
+
+        <label for="iou">Masculino</label>
+        <input type="radio" name="ou" id="iou">
+
+        <input type="submit" id="en" value="Enviar">
+        
+    </div>
+
+</body>
+</html>
+
+<!-- <label for="ipais"></label>
+        <select name="pais" id="ipais">
+            <option value="Brasil">Brasil</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Russia">Russia</option>
+        </select>
