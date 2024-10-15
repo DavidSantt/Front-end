@@ -1,0 +1,61 @@
+@charset "UTF -8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    background-color: lightgrey;
+    height: 300px;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(0, 117, 0);
+    color: white;
+    font-size: 1.2em;
+}
+
+.texto-centralizado-1 {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+    text-align: center;
+    line-height: 250px;
+}
+
+.texto-centralizado-2 {
+    position: absolute;
+    top: 50%;
+
+    transform: translate(, -50%);
+}
+
+.a-m-a {
+    display: block;
+    margin: auto;
+}
+
+.a-absolute {
+    
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}

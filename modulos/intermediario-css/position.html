@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+             margin: 0;
+             padding: 0;
+        }
+
+        .elemento {
+            color: #fff;
+            font-size: 32px;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .elemento-estatico {
+            position: static;
+            background-color: blue;
+        }
+
+        .elemento-relativo {
+            position: relative;
+            left: 100px;
+            top: -10px;
+
+            transform: translate();
+
+            background-color: black;
+        }
+
+        .elemento-absoluto {
+            position: absolute;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <div  class="elemento elemento-estatico">
+        static
+    </div>
+
+    <div  class="elemento elemento-relativo">
+        static
+    </div>
+
+    <div  class="elemento elemento-absoluto">
+        static
+    </div>
+</body>
+</html>
