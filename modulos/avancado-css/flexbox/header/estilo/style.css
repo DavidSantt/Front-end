@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+nav a {
+    margin-left: 15px;
+}
+
+@media (max-width: 425px) {
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        margin-top: 30px;
+    }
+
+    nav a {
+        margin-left: 0px;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            max-width: 400px;
+            
+            border: 1px solid #ccc;
+        }
+
+        .item {
+            background-color: rgb(195, 145, 241);
+            font-size: 20p;
+            margin: 5px;
+            text-align: center;
+            height: 40px;
+        }
+
+        .justify-content .item1, .justify-content .item3 {
+            width: 80px;
+        }
+
+        .grow1 {
+            flex-grow: 1;
+        }
+
+        .grow2 {
+            flex-grow: 2;
+        }
+
+        .grow3 {
+            flex-grow: 3;
+        }
+
+        .basis-auto {
+            flex-basis: 0px;
+        }
+
+        .basis-0 {
+            flex-basis: 0px;
+        }
+
+        .basis-100 {
+            flex-basis: 0px;
+        }
+
+        .shrink1 {
+            flex-shrink: 0;
+        }
+
+        .shrink2 {
+            flex-shrink: 0;
+        }
+
+        .shrink3 {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex itens - Grow - Basis, Shrink</h1>
+
+    <section>
+        <h2>Grow</h2>
+
+        <aside class="container">
+            <div class="item grow1">1</div>
+            <div class="item grow2">2</div>
+            <div class="item grow3">3</div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Basis</h2>
+
+        <aside class="container">
+            <div class="item basis-auto">Lorem 123</div>
+            <div class="item basis-0">lorem 123 456</div>
+            <div class="item basis-100">Lorem 123 456 789</div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>shrink</h2>
+
+        <aside class="container shrink">
+            <div class="item shrink1">kjogyufytfdytufydrdtydfdtfdtropuhghyu</div>
+            <div class="item shrink2">lorem 123 456</div>
+            <div class="item shrink3">Lorem 123 456 789</div>
+        </aside>
+    </section>
+</body>
+</html>

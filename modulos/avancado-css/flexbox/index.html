@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .container {
+            width: 450px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 200px;
+            
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+        }
+
+        .item {
+            background-color: rgb(76, 0, 147);
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+            margin: 5px;
+            flex: auto;
+        }
+
+        .flex-3 {
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flex</h1>
+        <div class="container">
+            <div class="item flex-0">1</div>
+            <div class="item flex-0">2</div>
+            <div class="item flex-0">3</div>
+        </div>
+    </header>
+
+    <main>
+
+        <article>
+            <h1>Order</h1>
+
+            <div class="container">
+                <div class="item" style="order: 1;">1</div>
+                <div class="item" style="order: 3;">2</div>
+                <div class="item" style="order: 2;">3</div>
+            </div>
+        </article>
+
+        <article>
+            <h1>Align Self</h1>
+        
+            <div class="container align-self">
+                <div class="item flex-1">1</div>
+                <div class="item flex-2">2</div>
+                <div class="item flex-3">3</div>
+            </div>
+        </article>
+
+    </main>
+
+</body>
+</html>

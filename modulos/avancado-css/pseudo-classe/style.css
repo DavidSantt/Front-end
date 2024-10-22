@@ -1,0 +1,7 @@
+main p:first-child {
+    color: aqua;
+}
+
+main p:not(.p) {
+    color: blue;
+}

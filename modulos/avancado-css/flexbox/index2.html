@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            max-width: 400px;
+            border: 1px solid #ccc;
+        }
+
+        .item {
+            background-color: rgb(195, 145, 241);
+            font-size: 20p;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .justify-content .item1, .justify-content .item3 {
+            width: 80px;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+
+        .space-evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Container - Justyfy content</h1>
+
+    <section>
+        <h2>Flex-start</h2>
+
+        <aside class="container flex-start">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Flex-end</h2>
+
+        <aside class="container flex-end">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Center</h2>
+
+        <aside class="container center">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>space between</h2>
+
+        <aside class="container space-between">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>space around</h2>
+
+        <aside class="container space-around">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>space around</h2>
+
+        <aside class="container space-evenly">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </aside>
+    </section>
+</body>
+</html>
