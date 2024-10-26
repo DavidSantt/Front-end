@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho {
+    background-color: rgb(108, 255, 108);
+}
+
+.menu {
+    background-color: rgb(158, 158, 255);
+}
+
+.secao {
+    background-color: pink;
+}
+
+.aside {
+    background-color: orangered;
+}
+
+.rodape {
+    background-color: green;
+}
+
+.container {
+    /*display: grid;
+    grid-template-areas: "cabecalho cabecalho cabecalho" "menu secao aside" "rodape rodape rodape";
+    grid-gap: 5px;*/
+
+    grid: "cabecalho cabecalho cabecalho" 150px / 150px auto 150px
+    "menu secao aside"
+    "rodape rodape rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.secao {
+    grid-area: secao;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.rodape {
+    grid-area: rodape;
+}

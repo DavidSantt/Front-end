@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+
+    display: grid;
+    grid-template: 1fr 3fr 1fr / 4fr 1fr;
+    grid-gap: 5px;
+}
+
+header {
+    background-color: rgb(160, 160, 255);
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+main {
+    background-color: rgb(255, 154, 231);
+    
+}
+
+aside {
+    background-color: rgb(255, 70, 70);
+    
+}
+
+footer {
+    background-color: rgb(124, 255, 192);
+    grid-column: 1/3;
+}

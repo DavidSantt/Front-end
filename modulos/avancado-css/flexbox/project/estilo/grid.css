@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(196, 196, 255);
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: black;
+    max-width: 500px;
+    height: 600px;
+    border-radius: 30px;
+    
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(5,50px) / repeat(3,50px);
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: rgb(105, 105, 105);
+}
+
