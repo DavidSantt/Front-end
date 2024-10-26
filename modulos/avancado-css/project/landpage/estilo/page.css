@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+header {
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
