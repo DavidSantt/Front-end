@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(153, 153, 255);
+    
+}
+
+main {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 220px;
+    height: 300px;
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+.nome-pintura {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.pinturas .pintura {
+    position: relative;
+}
+
+.informacoes {
+    position: absolute;
+    top: 240px;
+
+    padding-left: 10px;
+    color: white;
+
+}
+
+.pinturas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 750px) {
+    .pinturas {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+}
