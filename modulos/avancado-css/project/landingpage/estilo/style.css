@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "hero hero hero hero"
+        "about about about about"
+        "services services services services"
+        "projects projects projects projects"
+        "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+    padding: 20px 40px;
+}
+
+.header-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header li {
+    margin-left: 30px;
+}
+
+.header a:hover h1 {
+    color: coral;
+}
+
+.header nav ul li a:hover {
+    background-color: coral;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+/* MENU RESONSIVO */
+
+.menu {
+    width: 60px;
+    height: 60px;
+    display: none;
+    align-self: flex-end;
+}
+
+.header nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .hamburguer {
+    background-color: #000;
+    display: block;
+    width: 30px;
+    height: 2px;
+
+
+    position: relative;
+    top: 29px;
+    left: 15px;
+
+    transition: 0.5s ease-in-out;
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    transition: 0.2s ease-in-out;
+}
+
+.header .hamburguer:before {
+    top: -10px;
+}
+
+.header .hamburguer:after {
+    bottom: -10px;
+}
+
+header input {
+    display: none;
+}
+
+.header input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+.header input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .header .menu {
+        display: block;
+
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .header input:checked~ul {
+        display: block;
+    }
+
+    .header nav {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        z-index: 1;
+        right: 30px;
+        top: 20px;
+    }
+
+    header nav ul {
+        width: 200px;
+        background-color: #fff;
+        padding: 20px;
+
+    }
+
+    header nav ul li {
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* HERO */
+
+.hero {
+    grid-area: hero;
+    height: 70vh;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: rgb(193, 80, 0);
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
+    background: url(../img/laranja\ 2.png) no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT */
+
+.about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    background-color: white;
+    min-height: 500px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.imagem-right,
+.imagem-left {
+    width: 100%;
+    height: 100%;
+}
+
+.imagem-right {
+    background: url(../img/ponte.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.imagem-left {
+    background: url(../img/montanha.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.item {
+    padding: 20%;
+}
+
+.item h3 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.item p {
+    margin-bottom: 20px;
+}
+
+.btn-about {
+    font-size: 16px;
+    text-decoration: underline;
+
+}
+
+.btn-about:hover {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 550px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "item"
+            "imagem-right"
+            "item"
+            "imagem-left";
+    }
+}
+
+/* SERVICES */
+
+.services {
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    text-align: center;
+}
+
+.services p {
+    text-align: justify;
+    max-width: 400px;
+}
+
+.services h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.serv1 {
+    background-color: rgb(149, 157, 246);
+    padding: 15%;
+}
+
+.serv2 {
+    background-color: rgb(255, 138, 232);
+    padding: 15%;
+}
+
+.boll1 {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(240deg, rgb(255, 128, 149), rgb(255, 148, 164), rgb(255, 174, 188), rgb(255, 203, 213));
+}
+
+.boll2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(87, 87, 255);
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, blue, rgb(45, 45, 255), rgb(76, 76, 255), rgb(108, 108, 251));
+}
+
+@media (max-width: 550px) {
+    .services {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+/* PROJECTS */
+
+.projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.projects img {
+    width: 100%;
+    height: 100%;
+}
+
+.projects a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+@media (max-width: 798px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(62, 255, 139, 0.844);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h2 {
+    padding: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer nav ul {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
