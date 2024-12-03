@@ -1,0 +1,19 @@
+/*let usuario = {
+    nome: 'David', excluir: 
+    function excluido() {
+    console.log(`O usuario ${usuario.nome} foi excluido`)
+    }
+}
+
+usuario.excluir()
+*/
+
+let pessoa = {
+    nome: 'Maria',
+    mudarNome(novoNome) {
+        this.nome = novoNome
+    }
+}
+
+pessoa.mudarNome('David')
+console.log(pessoa.nome)

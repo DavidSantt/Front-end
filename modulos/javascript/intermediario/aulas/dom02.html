@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fonte-grande {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Manipulando estilos</h1>
+
+    <input type="button" value="Alterar Cor de fundo" onclick="alterarCor()">
+
+    <br><br>
+
+    <input type="button" value="Aumentar fonte" onclick="aumentarFonte()">
+
+    <article class="post">
+
+        <p><strong>David freitas</strong> <span>@davidfreitt - 1h</span></p>
+        <p class="texto-post">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus earum non numquam debitis aspernatur nulla libero veniam quae similique, odio explicabo officia culpa sed sapiente eaque vel quasi quidem alias.</p>
+
+    </article>
+
+    <article class="post">
+        
+        <p><strong>Gaviões sccp</strong> <span>@gasccp - 3h</span></p>
+        <p class="texto-post">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus earum non numquam debitis aspernatur nulla libero veniam quae similique, odio explicabo officia culpa sed sapiente eaque vel quasi quidem alias.</p>
+
+    </article>
+
+    <div>Manipulando atributos</div>
+
+    <br>
+
+    <input type="button" value= "Maracar Radio M" onclick="marcarRadio('M')">
+
+    <input type="button" value="Marcar Radio F" onclick="marcarRadio('F')">
+
+    <br><br>
+
+    <input type="radio" name="genero" id="masc">
+    <label for="masc">Masculino</label>
+
+    <input type="radio" name="genero" id="femi">
+    <label for="femi">Feminino</label>
+
+    <script src="dom02.js"></script>
+</body>
+</html>
